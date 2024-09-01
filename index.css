@@ -1,0 +1,332 @@
+
+
+body {
+    margin: 0px;
+    background-color: #087df11c;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #024c97;;
+    margin-bottom: 20px;
+}
+
+.header span {
+ color: #ffffff;
+ font-size: 32px;
+ font-weight: bold;
+}
+
+.header-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font: 600 1rem/1.5 "Poppins", sans-serif;  
+}
+
+.header-logo img {
+    height: 100px;
+    width: 350px;
+}
+
+
+.header h2 {
+  margin-right: 10px;
+}
+
+.header-title span {
+  font-family: 'arial';
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.header-menu li {
+    list-style: none;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.header-menu li a {
+    color: #ffffff;
+    background-color: rgb(0,81,160);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Toggle Button */
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #024c97;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: #024c97;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #ffffff;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #024c97;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options button {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    justify-content: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+   
+}
+
+footer span {
+    display: block;
+    background-color: #024c97;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+
+@media(max-width:800px) {
+
+    ul li a {
+        margin: 5px;
+        color: #f3efef96;
+        font-size: 12px;
+        font-weight: 700;
+        align-items: right;
+    }
+
+    /* .cards {
+        flex-direction: column;
+        margin: 2px;
+        height: 230vh;
+    } */
+
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* .card:last-child {
+        margin-bottom: 0px;
+    } */
+}
+
+
+.ordem {
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    place-content: center;
+    border-radius: 0px 0px 4px 0px;
+    width: 32px;
+    height: 32px;
+    background: #024c97;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 0px 210px 190px 50px;
+    grid-template-areas: "number" "image" "text" "stats";
+    font-family: roboto;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+a {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+.card-image img {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-text p {
+    margin-top: -15px;
+    color: rgb(95, 94, 94);
+    font-size: 20.5px;
+    font-weight: 300;
+}
+
+.card-stats {
+    background-color: rgb(74, 77, 73);
+}
+
+.card-stats a i {
+    margin: 4.5%;
+    font-size: 25px;
+    color: white;
+}
+
+.card-stats :hover {
+    color: rgb(58, 61, 58);
+}
