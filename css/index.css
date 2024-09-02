@@ -1,7 +1,29 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
-  background-color: #087df11c;
+  font-family: 'Fira Sas', Arial, sans-serif;
+  color: #141414;
 }
+
+.container {
+  align-items: center;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+
+img {
+  display: block;
+}
+
 
 .header {
   display: flex;
@@ -220,21 +242,25 @@ a:active {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   color: #ffffff;
   text-align: center;
+  background-color: #024c97;
 
 }
 
 .logo {
   padding: 5px;
-  width: 150px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
-footer span {
+footer .span {
   display: flex;
-  justify-content: center;
-  background-color: #024c97;
+  align-items: center;
+  font-weight: bold;
+  
 }
 
 .titulo-section {
@@ -254,7 +280,7 @@ footer span {
 .main-container {
   max-width: 1200px;
   padding: 40px 20px;
-  display: grid;
+  display: flex;
   align-items: center;
   margin: 0 auto;
   grid-template-columns: 1fr;
