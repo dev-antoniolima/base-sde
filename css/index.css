@@ -51,12 +51,9 @@ img {
   font: 600 1rem/1.5 "Poppins", sans-serif;
 }
 
-.logo-cima {
-  height: 100px;
-}
 
 .header-logo img {
-  height: 100px;
+  height: 80px;
 }
 
 
@@ -282,13 +279,13 @@ footer .span {
   gap: 10px 20px;
 }
 
+
 .main-container {
+  display: flex;
   max-width: 1200px;
   padding: 40px 20px;
-  display: flex;
   align-items: center;
   margin: 0 auto;
-  grid-template-columns: 1fr;
 }
 
 .cursos {
@@ -313,6 +310,19 @@ footer .span {
 
 @media(max-width:800px) {
 
+  .header-logo {
+    display: flex;
+    margin-left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font: 600 1rem/1.5 "Poppins", sans-serif;
+  }
+
+  .header-logo img {
+    height: 50px;
+  }
+
   ul li a {
     margin: 5px;
     color: #f3efef96;
@@ -328,13 +338,46 @@ footer .span {
     } */
 
 
+footer span {
+  font-size: 10px;
+}
+
   .card {
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 0px 110px 90px;
+    grid-template-areas: "number" "image" "text";
+    font-family: roboto;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
   }
 
   /* .card:last-child {
         margin-bottom: 0px;
     } */
+
+    .main-container {
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .main-container h1::before {
+        display: none;
+    }
+
+   
+.main-container h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main-container h2::before {
+    width: 90px;
+    height: 80px;
+    left: 10px;
+}
+    
 }
 
 
@@ -352,8 +395,8 @@ footer .span {
 .card {
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: 0px 210px 190px 50px;
-  grid-template-areas: "number" "image" "text" "stats";
+  grid-template-rows: 0px 210px 190px;
+  grid-template-areas: "number" "image" "text";
   font-family: roboto;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -388,18 +431,4 @@ a {
   color: rgb(95, 94, 94);
   font-size: 20.5px;
   font-weight: 300;
-}
-
-.card-stats {
-  background-color: #024c97;
-}
-
-.card-stats a i {
-  margin: 4.5%;
-  font-size: 25px;
-  color: white;
-}
-
-.card-stats :hover {
-  color: rgb(58, 61, 58);
 }
