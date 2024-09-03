@@ -44,6 +44,7 @@ img {
 
 .header-logo {
   display: flex;
+  margin-left: 35px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
