@@ -29,7 +29,7 @@ img {
   display: flex;
   padding: 10px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-color: #024c97;
   ;
@@ -43,15 +43,19 @@ img {
 }
 
 .header-logo {
+  display: flex;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
   font: 600 1rem/1.5 "Poppins", sans-serif;
 }
 
+.logo-cima {
+  height: 100px;
+}
+
 .header-logo img {
   height: 100px;
-  width: 350px;
 }
 
 
