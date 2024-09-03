@@ -336,7 +336,10 @@ footer .span {
         margin: 2px;
         height: 230vh;
     } */
-
+ .logo {
+  width: 50px;
+  height: 50px;
+}
 
 footer span {
   font-size: 10px;
@@ -344,8 +347,8 @@ footer span {
 
   .card {
     display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 0px 110px 90px;
+    grid-template-columns: 250px !important;
+    grid-template-rows: 0px 150px 150px !important;
     grid-template-areas: "number" "image" "text";
     font-family: roboto;
     background: white;
@@ -353,9 +356,20 @@ footer span {
     text-align: center;
   }
 
-  /* .card:last-child {
-        margin-bottom: 0px;
-    } */
+  .ordem {
+    font-size: 18px !important;
+    border-radius: 0px 0px 2px 0px !important;
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .card-text h2 {
+    font-size: 16px !important;
+  }
+  
+  .card-text p {
+    font-size: 12px !important;
+  }
 
     .main-container {
         gap: 40px;
@@ -418,12 +432,12 @@ a {
 
 .card-text {
   grid-area: text;
-  margin: 25px;
+  margin: 10px;
 }
 
 .card-text h2 {
   margin-top: 0px;
-  font-size: 28px;
+  font-size: 21px;
 }
 
 .card-text p {
